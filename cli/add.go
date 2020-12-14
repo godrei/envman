@@ -6,8 +6,8 @@ import (
 	"io/ioutil"
 	"os"
 
-	"github.com/bitrise-io/envman/envman"
-	"github.com/bitrise-io/envman/models"
+	"github.com/godrei/envman/envman"
+	"github.com/godrei/envman/models"
 	"github.com/bitrise-io/go-utils/pointers"
 	log "github.com/sirupsen/logrus"
 	"github.com/urfave/cli"

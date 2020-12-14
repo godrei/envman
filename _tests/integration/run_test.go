@@ -8,7 +8,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/bitrise-io/envman/env"
+	"github.com/godrei/envman/env"
 	"github.com/bitrise-io/go-utils/pathutil"
 	"github.com/stretchr/testify/require"
 )

@@ -8,7 +8,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/bitrise-io/envman/envman"
+	"github.com/godrei/envman/envman"
 
 	"github.com/bitrise-io/go-utils/command"
 	"github.com/bitrise-io/go-utils/fileutil"

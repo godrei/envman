@@ -3,7 +3,7 @@ package envman
 import (
 	"errors"
 
-	"github.com/bitrise-io/envman/models"
+	"github.com/godrei/envman/models"
 	"github.com/bitrise-io/go-utils/fileutil"
 	"github.com/bitrise-io/go-utils/pathutil"
 	"github.com/bitrise-io/goinp/goinp"

@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/bitrise-io/envman/envman"
-	"github.com/bitrise-io/envman/models"
+	"github.com/godrei/envman/envman"
+	"github.com/godrei/envman/models"
 	log "github.com/sirupsen/logrus"
 	"github.com/urfave/cli"
 )

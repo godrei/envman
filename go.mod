@@ -1,4 +1,4 @@
-module github.com/bitrise-io/envman
+module github.com/godrei/envman
 
 go 1.15
 

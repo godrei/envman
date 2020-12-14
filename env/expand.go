@@ -5,7 +5,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/bitrise-io/envman/models"
+	"github.com/godrei/envman/models"
 )
 
 // Action is a possible action changing an environment variable

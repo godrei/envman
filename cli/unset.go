@@ -1,8 +1,8 @@
 package cli
 
 import (
-	"github.com/bitrise-io/envman/envman"
-	"github.com/bitrise-io/envman/models"
+	"github.com/godrei/envman/envman"
+	"github.com/godrei/envman/models"
 	"github.com/bitrise-io/go-utils/pointers"
 	"github.com/urfave/cli"
 )

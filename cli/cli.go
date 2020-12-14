@@ -6,8 +6,8 @@ import (
 	"path"
 	"path/filepath"
 
-	"github.com/bitrise-io/envman/envman"
-	"github.com/bitrise-io/envman/version"
+	"github.com/godrei/envman/envman"
+	"github.com/godrei/envman/version"
 	log "github.com/sirupsen/logrus"
 	"github.com/urfave/cli"
 )

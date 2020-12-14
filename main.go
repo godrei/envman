@@ -1,6 +1,6 @@
 package main
 
-import "github.com/bitrise-io/envman/cli"
+import "github.com/godrei/envman/cli"
 
 func main() {
 	cli.Run()

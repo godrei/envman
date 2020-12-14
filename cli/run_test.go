@@ -6,7 +6,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/bitrise-io/envman/models"
+	"github.com/godrei/envman/models"
 	"github.com/bitrise-io/go-utils/pointers"
 	"github.com/stretchr/testify/require"
 )
