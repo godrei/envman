@@ -123,9 +123,11 @@ func (entry *Entry) WithFields(fields Fields) *Entry {
 	for k, v := range fields {
 		isErrField := false
 		if t := reflect.TypeOf(v); t != nil {
-			switch {
-			case t.Kind() == reflect.Func, t.Kind() == reflect.Ptr && t.Elem().Kind() == reflect.Func:
+			switch t.Kind() {
+			case reflect.Func:
 				isErrField = true
+			case reflect.Ptr:
+				isErrField = t.Elem().Kind() == reflect.Func
 			}
 		}
 		if isErrField {

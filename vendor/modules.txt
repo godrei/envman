@@ -1,0 +1,38 @@
+# github.com/bitrise-io/go-utils v0.0.0-20201211082830-859032e9adf0
+## explicit
+github.com/bitrise-io/go-utils/command
+github.com/bitrise-io/go-utils/fileutil
+github.com/bitrise-io/go-utils/parseutil
+github.com/bitrise-io/go-utils/pathutil
+github.com/bitrise-io/go-utils/pointers
+# github.com/bitrise-io/goinp v0.0.0-20190611131639-bd18a8681e27
+## explicit
+github.com/bitrise-io/goinp/goinp
+# github.com/cpuguy83/go-md2man/v2 v2.0.0-20190314233015-f79a8a8ca69d
+github.com/cpuguy83/go-md2man/v2/md2man
+# github.com/davecgh/go-spew v1.1.1
+github.com/davecgh/go-spew/spew
+# github.com/pmezard/go-difflib v1.0.0
+github.com/pmezard/go-difflib/difflib
+# github.com/russross/blackfriday/v2 v2.0.1
+github.com/russross/blackfriday/v2
+# github.com/shurcooL/sanitized_anchor_name v1.0.0
+github.com/shurcooL/sanitized_anchor_name
+# github.com/sirupsen/logrus v1.7.0
+## explicit
+github.com/sirupsen/logrus
+# github.com/stretchr/testify v1.5.1
+## explicit
+github.com/stretchr/testify/assert
+github.com/stretchr/testify/require
+# github.com/urfave/cli v1.22.5
+## explicit
+github.com/urfave/cli
+# golang.org/x/crypto v0.0.0-20200220183623-bac4c82f6975
+golang.org/x/crypto/ssh/terminal
+# golang.org/x/sys v0.0.0-20200219091948-cb0a6d8edb6c
+golang.org/x/sys/unix
+golang.org/x/sys/windows
+# gopkg.in/yaml.v2 v2.4.0
+## explicit
+gopkg.in/yaml.v2
