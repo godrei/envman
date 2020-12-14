@@ -13,7 +13,6 @@ import (
 )
 
 var (
-	bufferPool *sync.Pool
 
 	// qualified package name, cached at first use
 	logrusPackage string
@@ -31,12 +30,6 @@ const (
 )
 
 func init() {
-	bufferPool = &sync.Pool{
-		New: func() interface{} {
-			return new(bytes.Buffer)
-		},
-	}
-
 	// start at the bottom of the stack before the package-name cache is primed
 	minimumCallerDepth = 1
 }
@@ -130,11 +123,9 @@ func (entry *Entry) WithFields(fields Fields) *Entry {
 	for k, v := range fields {
 		isErrField := false
 		if t := reflect.TypeOf(v); t != nil {
-			switch t.Kind() {
-			case reflect.Func:
+			switch {
+			case t.Kind() == reflect.Func, t.Kind() == reflect.Ptr && t.Elem().Kind() == reflect.Func:
 				isErrField = true
-			case reflect.Ptr:
-				isErrField = t.Elem().Kind() == reflect.Func
 			}
 		}
 		if isErrField {
@@ -243,9 +234,12 @@ func (entry Entry) log(level Level, msg string) {
 
 	entry.fireHooks()
 
-	buffer = bufferPool.Get().(*bytes.Buffer)
+	buffer = getBuffer()
+	defer func() {
+		entry.Buffer = nil
+		putBuffer(buffer)
+	}()
 	buffer.Reset()
-	defer bufferPool.Put(buffer)
 	entry.Buffer = buffer
 
 	entry.write()
